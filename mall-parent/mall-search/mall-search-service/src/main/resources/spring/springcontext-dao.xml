@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 加载数据库连接的properties文件，需要修改文件名 -->
+    <context:property-placeholder
+            location="classpath:conf/db.properties" />
+
+    <!-- 配置数据源，需要修改下面的名字 -->
+    <bean id="dataSource"
+          class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="jdbcUrl" value="${jdbc.url}"></property>
+        <property name="driverClass" value="${jdbc.driver}"></property>
+        <property name="user" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+    </bean>
+
+    <!-- 配置和mybatis的整合 -->
+    <!-- 创建sqlSessionFactory工厂 -->
+    <bean id="sqlSessionFactory"
+          class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 引入数据源 -->
+        <property name="dataSource" ref="dataSource"></property>
+        <!-- 指定Mybatis全局配置文件的位置,需要修改路径 -->
+        <property name="configLocation"
+                  value="classpath:mybatis/mybatis.xml"></property>
+    </bean>
+
+    <!-- 配置扫描器，将mybatis接口的实现加入spring中 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- 扫描所有dao接口的实现，加入到ioc容器中，需要修改包名 -->
+        <property name="basePackage" value="com.mall.mapper,com.mall.search.mapper"></property>
+    </bean>
+
+</beans>

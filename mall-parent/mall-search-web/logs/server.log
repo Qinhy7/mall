@@ -1,0 +1,1930 @@
+
+
+[INFO ] 2019-01-16 16:05:50,200 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'dispatcherServlet': initialization started
+
+
+[INFO ] 2019-01-16 16:05:50,221 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 16:05:50 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 16:05:50,249 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-01-16 16:05:50,545 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-01-16 16:05:50,674 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2019-01-16 16:05:50,678 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-01-16 16:05:51,000 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, data: {com.mall.portal.service.ContentService=empty://192.168.1.200/com.mall.portal.service.ContentService?application=mall-portal-web&category=configurators&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=10572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625945802 empty://192.168.1.200/com.mall.portal.service.ContentService?application=mall-portal-web&category=routers&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=10572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625945802 dubbo://192.168.1.200:20881/com.mall.portal.service.ContentService?anyhost=true&application=mall-portal&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=9512&side=provider&timeout=100000000&timestamp=1547625889491, com.mall.portal.service.ContentCategoryService=empty://192.168.1.200/com.mall.portal.service.ContentCategoryService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625929374 empty://192.168.1.200/com.mall.portal.service.ContentCategoryService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625929374 dubbo://192.168.1.200:20881/com.mall.portal.service.ContentCategoryService?anyhost=true&application=mall-portal&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=9512&side=provider&timeout=100000000&timestamp=1547625888181, com.mall.search.service.SearchService=empty://192.168.1.200/com.mall.search.service.SearchService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625932357 empty://192.168.1.200/com.mall.search.service.SearchService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625932357 dubbo://192.168.1.200:20882/com.mall.search.service.SearchService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=180&side=provider&timeout=100000000&timestamp=1547625899391, com.mall.service.ItemService=empty://192.168.1.200/com.mall.service.ItemService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625931606 empty://192.168.1.200/com.mall.service.ItemService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625931606 dubbo://192.168.1.200:20880/com.mall.service.ItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save&pid=7960&side=provider&timeout=100000000&timestamp=1547625859162, com.mall.search.service.SearchItemService=empty://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=180&side=provider&timeout=100000000&timestamp=1547625899865, com.mall.service.ItemCatService=empty://192.168.1.200/com.mall.service.ItemCatService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625931984 empty://192.168.1.200/com.mall.service.ItemCatService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625931984 dubbo://192.168.1.200:20880/com.mall.service.ItemCatService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=7960&side=provider&timeout=100000000&timestamp=1547625881953}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-01-16 16:05:51,033 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-01-16 16:05:51,050 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-01-16 16:05:51,051 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=NKP1JT5GYED5IC3
+
+
+[INFO ] 2019-01-16 16:05:51,052 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_191
+
+
+[INFO ] 2019-01-16 16:05:51,054 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-01-16 16:05:51,054 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=H:\dev\java\jre
+
+
+[INFO ] 2019-01-16 16:05:51,054 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;H:\dev\idea\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar
+
+
+[INFO ] 2019-01-16 16:05:51,055 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=H:\dev\java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;H:\dev\java\bin;H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\软件安装\Bandizip\;.
+
+
+[INFO ] 2019-01-16 16:05:51,055 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2019-01-16 16:05:51,056 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-01-16 16:05:51,057 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-01-16 16:05:51,057 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-01-16 16:05:51,057 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-01-16 16:05:51,058 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2019-01-16 16:05:51,058 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2019-01-16 16:05:51,059 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=F:\dev\workspace\idea\mall\mall-parent\mall-search-web
+
+
+[INFO ] 2019-01-16 16:05:51,060 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.1.111:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@4055e128
+
+
+[INFO ] 2019-01-16 16:05:51,100 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-01-16 16:05:51,103 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+
+
+[INFO ] 2019-01-16 16:05:51,117 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.1.111/192.168.1.111:2181, sessionid = 0x1683fbdc7c7004b, negotiated timeout = 30000
+
+
+[INFO ] 2019-01-16 16:05:51,123 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-01-16 16:05:51,181 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10700&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625950923, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:05:51,243 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10700&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625950923, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:05:51,272 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10700&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625950923, urls: [dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=180&side=provider&timeout=100000000&timestamp=1547625899865, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10700&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625950923, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10700&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625950923], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:05:51,462 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.1.200:20882 from NettyClient 192.168.1.200 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x100ca8cf, /192.168.1.200:59098 => /192.168.1.200:20882]], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:05:51,463 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient NKP1JT5GYED5IC3/192.168.1.200 connect to the server /192.168.1.200:20882, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:05:51,531 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.mall.search.service.SearchItemService from url zookeeper://192.168.1.111:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=mall-search-web&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10700&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547625950923, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:05:51,723 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[INFO ] 2019-01-16 16:05:51,877 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.mall.search.controller.SearchController.getItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2019-01-16 16:05:52,317 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 16:05:50 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 16:05:52,400 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 16:05:50 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 16:05:52,514 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'dispatcherServlet': initialization completed in 2311 ms
+
+
+[WARN ] 2019-01-16 16:06:17,348 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.1.113:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@63c14c39}, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.1.113:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@63c14c39}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 16:06:18,361 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.1.113:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@1826f3a0}, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.1.113:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@1826f3a0}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 16:06:19,370 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.1.113:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@49d4e90a}, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.1.113:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@49d4e90a}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[ERROR] 2019-01-16 16:06:19,374 method:com.mall.search.exception.GlobalException.resolveException(GlobalException.java:27)
+系统出现错误
+
+
+[INFO ] 2019-01-16 16:10:51,265 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'dispatcherServlet': initialization started
+
+
+[INFO ] 2019-01-16 16:10:51,297 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 16:10:51 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 16:10:51,349 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-01-16 16:10:51,855 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-01-16 16:10:52,019 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2019-01-16 16:10:52,025 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-01-16 16:10:52,595 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, data: {com.mall.portal.service.ContentCategoryService=empty://192.168.1.200/com.mall.portal.service.ContentCategoryService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625929374 empty://192.168.1.200/com.mall.portal.service.ContentCategoryService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625929374 dubbo://192.168.1.200:20881/com.mall.portal.service.ContentCategoryService?anyhost=true&application=mall-portal&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=9512&side=provider&timeout=100000000&timestamp=1547625888181, com.mall.portal.service.ContentService=empty://192.168.1.200/com.mall.portal.service.ContentService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625931318 empty://192.168.1.200/com.mall.portal.service.ContentService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625931318 dubbo://192.168.1.200:20881/com.mall.portal.service.ContentService?anyhost=true&application=mall-portal&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=9512&side=provider&timeout=100000000&timestamp=1547625889491, com.mall.search.service.SearchService=empty://192.168.1.200:20882/com.mall.search.service.SearchService?anyhost=true&application=mall-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=11376&side=provider&timeout=100000000&timestamp=1547626204976, com.mall.search.service.SearchItemService=empty://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11376&side=provider&timeout=100000000&timestamp=1547626205460, com.mall.service.ItemService=empty://192.168.1.200/com.mall.service.ItemService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625931606 empty://192.168.1.200/com.mall.service.ItemService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625931606 dubbo://192.168.1.200:20880/com.mall.service.ItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save&pid=7960&side=provider&timeout=100000000&timestamp=1547625859162, com.mall.service.ItemCatService=empty://192.168.1.200/com.mall.service.ItemCatService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625931984 empty://192.168.1.200/com.mall.service.ItemCatService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=10420&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547625931984 dubbo://192.168.1.200:20880/com.mall.service.ItemCatService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=7960&side=provider&timeout=100000000&timestamp=1547625881953}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-01-16 16:10:52,618 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-01-16 16:10:52,645 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-01-16 16:10:52,646 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=NKP1JT5GYED5IC3
+
+
+[INFO ] 2019-01-16 16:10:52,646 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_191
+
+
+[INFO ] 2019-01-16 16:10:52,647 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-01-16 16:10:52,647 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=H:\dev\java\jre
+
+
+[INFO ] 2019-01-16 16:10:52,647 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;H:\dev\idea\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar
+
+
+[INFO ] 2019-01-16 16:10:52,647 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=H:\dev\java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;H:\dev\java\bin;H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\软件安装\Bandizip\;.
+
+
+[INFO ] 2019-01-16 16:10:52,647 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2019-01-16 16:10:52,647 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-01-16 16:10:52,648 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-01-16 16:10:52,648 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-01-16 16:10:52,649 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-01-16 16:10:52,649 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2019-01-16 16:10:52,649 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2019-01-16 16:10:52,650 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=F:\dev\workspace\idea\mall\mall-parent\mall-search-web
+
+
+[INFO ] 2019-01-16 16:10:52,651 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.1.111:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@706bfd8c
+
+
+[INFO ] 2019-01-16 16:10:52,690 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-01-16 16:10:52,693 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+
+
+[INFO ] 2019-01-16 16:10:52,699 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.1.111/192.168.1.111:2181, sessionid = 0x1683fbdc7c7004d, negotiated timeout = 30000
+
+
+[INFO ] 2019-01-16 16:10:52,702 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-01-16 16:10:52,734 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10468&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547626252527, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:10:52,757 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10468&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547626252527, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:10:52,794 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10468&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547626252527, urls: [dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11376&side=provider&timeout=100000000&timestamp=1547626205460, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10468&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547626252527, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10468&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547626252527], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:10:53,016 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.1.200:20882 from NettyClient 192.168.1.200 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x53d536bc, /192.168.1.200:59317 => /192.168.1.200:20882]], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:10:53,016 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient NKP1JT5GYED5IC3/192.168.1.200 connect to the server /192.168.1.200:20882, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:10:53,076 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.mall.search.service.SearchItemService from url zookeeper://192.168.1.111:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=mall-search-web&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10468&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547626252527, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:10:53,240 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[INFO ] 2019-01-16 16:10:53,295 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.mall.search.controller.SearchController.getItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2019-01-16 16:10:53,570 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 16:10:51 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 16:10:53,617 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 16:10:51 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 16:10:53,705 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'dispatcherServlet': initialization completed in 2436 ms
+
+
+[INFO ] 2019-01-16 16:13:57,927 method:com.alibaba.dubbo.config.AbstractConfig$1.run(AbstractConfig.java:450)
+ [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:13:57,944 method:com.alibaba.dubbo.registry.support.AbstractRegistryFactory.destroyAll(AbstractRegistryFactory.java:63)
+ [DUBBO] Close all registries [zookeeper://192.168.1.111:2181/com.alibaba.dubbo.registry.RegistryService?application=mall-search-web&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=10468&timestamp=1547626252555], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:13:57,945 method:com.alibaba.dubbo.registry.support.AbstractRegistry.destroy(AbstractRegistry.java:485)
+ [DUBBO] Destroy registry:zookeeper://192.168.1.111:2181/com.alibaba.dubbo.registry.RegistryService?application=mall-search-web&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=10468&timestamp=1547626252555, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:13:57,946 method:com.alibaba.dubbo.registry.support.AbstractRegistry.unregister(AbstractRegistry.java:312)
+ [DUBBO] Unregister: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10468&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547626252527, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:13:57,975 method:com.alibaba.dubbo.registry.support.AbstractRegistry.destroy(AbstractRegistry.java:494)
+ [DUBBO] Destroy unregister url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10468&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547626252527, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:13:57,976 method:com.alibaba.dubbo.registry.support.AbstractRegistry.unsubscribe(AbstractRegistry.java:343)
+ [DUBBO] Unsubscribe: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10468&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547626252527, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:13:57,977 method:com.alibaba.dubbo.registry.support.AbstractRegistry.destroy(AbstractRegistry.java:510)
+ [DUBBO] Destroy unsubscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10468&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547626252527, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:13:57,978 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:82)
+Terminate ZkClient event thread.
+
+
+[INFO ] 2019-01-16 16:13:57,980 method:org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:960)
+Closing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 16:10:51 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 16:13:57,980 method:org.apache.zookeeper.ZooKeeper.close(ZooKeeper.java:684)
+Session: 0x1683fbdc7c7004d closed
+
+
+[INFO ] 2019-01-16 16:13:57,983 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.destroy(DubboProtocol.java:407)
+ [DUBBO] Close dubbo connect: /192.168.1.200:59317-->/192.168.1.200:20882, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:13:57,985 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0x53d536bc, /192.168.1.200:59317 => /192.168.1.200:20882], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:13:57,993 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.destroy(DubboProtocol.java:421)
+ [DUBBO] Close dubbo connect: 192.168.1.200:0-->192.168.1.200:20882, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:13:57,994 method:com.alibaba.dubbo.rpc.protocol.AbstractProtocol.destroy(AbstractProtocol.java:63)
+ [DUBBO] Destroy reference: dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10468&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547626252527, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:13:57,995 method:com.alibaba.dubbo.registry.support.AbstractRegistry.unsubscribe(AbstractRegistry.java:343)
+ [DUBBO] Unsubscribe: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10468&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547626252527, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:13:57,997 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.1.200:20882,url:dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10468&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547626252527, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 16:13:57,998 method:org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:519)
+EventThread shut down for session: 0x1683fbdc7c7004d
+
+
+[INFO ] 2019-01-16 19:59:45,381 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'dispatcherServlet': initialization started
+
+
+[INFO ] 2019-01-16 19:59:45,448 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 19:59:45 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 19:59:45,648 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-01-16 19:59:46,488 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-01-16 19:59:46,908 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2019-01-16 19:59:46,917 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-01-16 19:59:47,773 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, data: {com.mall.portal.service.ContentCategoryService=empty://192.168.1.200:20881/com.mall.portal.service.ContentCategoryService?anyhost=true&application=mall-portal&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=1312&side=provider&timeout=100000000&timestamp=1547639924135, com.mall.portal.service.ContentService=empty://192.168.1.200:20881/com.mall.portal.service.ContentService?anyhost=true&application=mall-portal&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=1312&side=provider&timeout=100000000&timestamp=1547639925473, com.mall.search.service.SearchService=empty://192.168.1.200:20882/com.mall.search.service.SearchService?anyhost=true&application=mall-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=11852&side=provider&timeout=100000000&timestamp=1547639926199, com.mall.search.service.SearchItemService=empty://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11852&side=provider&timeout=100000000&timestamp=1547639926767, com.mall.service.ItemService=empty://192.168.1.200:20880/com.mall.service.ItemService?anyhost=true&application=mall-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save&pid=9412&side=provider&timeout=100000000&timestamp=1547639899720, com.mall.service.ItemCatService=empty://192.168.1.200:20880/com.mall.service.ItemCatService?anyhost=true&application=mall-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=9412&side=provider&timeout=100000000&timestamp=1547639923580}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-01-16 19:59:47,849 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-01-16 19:59:47,849 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=NKP1JT5GYED5IC3
+
+
+[INFO ] 2019-01-16 19:59:47,850 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_191
+
+
+[INFO ] 2019-01-16 19:59:47,850 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-01-16 19:59:47,850 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=H:\dev\java\jre
+
+
+[INFO ] 2019-01-16 19:59:47,851 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;H:\dev\idea\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar
+
+
+[INFO ] 2019-01-16 19:59:47,851 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=H:\dev\java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;H:\dev\java\bin;H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\软件安装\Bandizip\;.
+
+
+[INFO ] 2019-01-16 19:59:47,852 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2019-01-16 19:59:47,854 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-01-16 19:59:47,855 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-01-16 19:59:47,857 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-01-16 19:59:47,858 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-01-16 19:59:47,859 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2019-01-16 19:59:47,859 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2019-01-16 19:59:47,860 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=F:\dev\workspace\idea\mall\mall-parent\mall-search-web
+
+
+[INFO ] 2019-01-16 19:59:47,863 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.1.111:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@4da9ff8e
+
+
+[INFO ] 2019-01-16 19:59:47,945 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-01-16 19:59:48,064 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-01-16 19:59:48,067 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+
+
+[INFO ] 2019-01-16 19:59:48,075 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.1.111/192.168.1.111:2181, sessionid = 0x1683fbdc7c70051, negotiated timeout = 30000
+
+
+[INFO ] 2019-01-16 19:59:48,079 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-01-16 19:59:48,117 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 19:59:48,158 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 19:59:48,200 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618, urls: [dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11852&side=provider&timeout=100000000&timestamp=1547639926767, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 19:59:48,789 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.1.200:20882 from NettyClient 192.168.1.200 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xeae024e8, /192.168.1.200:50429 => /192.168.1.200:20882]], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 19:59:48,789 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient NKP1JT5GYED5IC3/192.168.1.200 connect to the server /192.168.1.200:20882, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 19:59:48,942 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.mall.search.service.SearchItemService from url zookeeper://192.168.1.111:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=mall-search-web&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547639987618, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 19:59:49,525 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[INFO ] 2019-01-16 19:59:49,753 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.mall.search.controller.SearchController.getItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2019-01-16 19:59:52,045 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 19:59:45 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 19:59:52,155 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 19:59:45 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 19:59:52,692 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'dispatcherServlet': initialization completed in 7271 ms
+
+
+[INFO ] 2019-01-16 20:09:04,703 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.1.200:20882,url:dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547639987618, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[WARN ] 2019-01-16 20:09:07,149 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.1.200:20882 find error . url: dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547639987618, dubbo version: 2.5.3, current host: 192.168.1.200
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547639987618) failed to connect to server /192.168.1.200:20882, error message is:Connection refused: no further information: /192.168.1.200:20882
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.1.200:20882
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2019-01-16 20:09:20,556 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618, urls: [dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=8732&side=provider&timeout=100000000&timestamp=1547640560528, dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11852&side=provider&timeout=100000000&timestamp=1547639926767], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[WARN ] 2019-01-16 20:09:20,572 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,575 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,576 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,582 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,583 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,585 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,588 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,589 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,590 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,591 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,594 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,595 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,596 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,597 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,598 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,600 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,601 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,603 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,604 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,605 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,609 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,611 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,612 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,618 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,619 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,623 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:20,624 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-01-16 20:09:21,184 method:com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:101)
+ [DUBBO] Close old netty channel [id: 0xeae024e8, /192.168.1.200:50429 :> /192.168.1.200:20882] on create new netty channel [id: 0x725da555, /192.168.1.200:50871 => /192.168.1.200:20882], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:09:21,185 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.1.200:20882 from NettyClient 192.168.1.200 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x725da555, /192.168.1.200:50871 => /192.168.1.200:20882]], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:09:24,879 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618, urls: [dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=8732&side=provider&timeout=100000000&timestamp=1547640560528], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[WARN ] 2019-01-16 20:09:24,890 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-01-16 20:09:24,893 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-01-16 20:10:51,705 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.1.200:20882,url:dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547639987618, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[WARN ] 2019-01-16 20:10:54,273 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.1.200:20882 find error . url: dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547639987618, dubbo version: 2.5.3, current host: 192.168.1.200
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547639987618) failed to connect to server /192.168.1.200:20882, error message is:Connection refused: no further information: /192.168.1.200:20882
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.1.200:20882
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2019-01-16 20:11:19,339 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618, urls: [empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[WARN ] 2019-01-16 20:11:19,344 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.1.200
+java.io.IOException: Can not lock the registry cache file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-01-16 20:11:48,147 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618, urls: [dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=12536&side=provider&timeout=100000000&timestamp=1547640708113], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:11:48,160 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.1.200:20882 from NettyClient 192.168.1.200 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xc6ecb2e1, /192.168.1.200:50959 => /192.168.1.200:20882]], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:11:48,160 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient NKP1JT5GYED5IC3/192.168.1.200 connect to the server /192.168.1.200:20882, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:12:27,657 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618, urls: [empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:12:27,660 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0xc6ecb2e1, /192.168.1.200:50959 => /192.168.1.200:20882], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:12:27,667 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.1.200:20882,url:dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547639987618, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:18:46,102 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'dispatcherServlet': initialization started
+
+
+[INFO ] 2019-01-16 20:18:46,130 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 20:18:46 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 20:18:46,167 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-01-16 20:18:46,656 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-01-16 20:18:46,809 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2019-01-16 20:18:46,817 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-01-16 20:18:47,241 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, data: {com.mall.portal.service.ContentService=empty://192.168.1.200/com.mall.portal.service.ContentService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640289830 empty://192.168.1.200/com.mall.portal.service.ContentService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640289830 dubbo://192.168.1.200:20881/com.mall.portal.service.ContentService?anyhost=true&application=mall-portal&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=1312&side=provider&timeout=100000000&timestamp=1547639925473, com.mall.portal.service.ContentCategoryService=empty://192.168.1.200/com.mall.portal.service.ContentCategoryService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640289112 empty://192.168.1.200/com.mall.portal.service.ContentCategoryService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640289112 dubbo://192.168.1.200:20881/com.mall.portal.service.ContentCategoryService?anyhost=true&application=mall-portal&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=1312&side=provider&timeout=100000000&timestamp=1547639924135, com.mall.search.service.SearchService=empty://192.168.1.200/com.mall.search.service.SearchService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640290083 empty://192.168.1.200/com.mall.search.service.SearchService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640290083 dubbo://192.168.1.200:20882/com.mall.search.service.SearchService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=4344&side=provider&timeout=100000000&timestamp=1547640873281, com.mall.service.ItemService=empty://192.168.1.200/com.mall.service.ItemService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640289942 empty://192.168.1.200/com.mall.service.ItemService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640289942 dubbo://192.168.1.200:20880/com.mall.service.ItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save&pid=12584&side=provider&timeout=100000000&timestamp=1547641010593, com.mall.search.service.SearchItemService=empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618 empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=9644&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547639987618 dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11852&side=provider&timeout=100000000&timestamp=1547639926767, com.mall.service.ItemCatService=empty://192.168.1.200/com.mall.service.ItemCatService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640290020 empty://192.168.1.200/com.mall.service.ItemCatService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640290020 dubbo://192.168.1.200:20880/com.mall.service.ItemCatService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=12584&side=provider&timeout=100000000&timestamp=1547641011137}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-01-16 20:18:47,265 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-01-16 20:18:47,288 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-01-16 20:18:47,289 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=NKP1JT5GYED5IC3
+
+
+[INFO ] 2019-01-16 20:18:47,289 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_191
+
+
+[INFO ] 2019-01-16 20:18:47,289 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-01-16 20:18:47,289 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=H:\dev\java\jre
+
+
+[INFO ] 2019-01-16 20:18:47,290 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;H:\dev\idea\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar;C:\Users\Administrator\.IntelliJIdea2018.3\system\captureAgent\debugger-agent.jar
+
+
+[INFO ] 2019-01-16 20:18:47,290 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=H:\dev\java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;H:\dev\java\bin;H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\软件安装\Bandizip\;.
+
+
+[INFO ] 2019-01-16 20:18:47,290 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2019-01-16 20:18:47,291 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-01-16 20:18:47,292 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-01-16 20:18:47,292 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-01-16 20:18:47,292 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-01-16 20:18:47,293 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2019-01-16 20:18:47,293 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2019-01-16 20:18:47,293 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=F:\dev\workspace\idea\mall\mall-parent\mall-search-web
+
+
+[INFO ] 2019-01-16 20:18:47,294 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.1.111:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@540a63c5
+
+
+[INFO ] 2019-01-16 20:18:47,328 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-01-16 20:18:47,330 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+
+
+[INFO ] 2019-01-16 20:18:47,336 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.1.111/192.168.1.111:2181, sessionid = 0x1683fbdc7c7005a, negotiated timeout = 30000
+
+
+[INFO ] 2019-01-16 20:18:47,339 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-01-16 20:18:47,364 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=12948&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547641127153, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:18:47,384 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=12948&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547641127153, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:18:47,409 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=12948&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547641127153, urls: [dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=4344&side=provider&timeout=100000000&timestamp=1547640874308, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=12948&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547641127153, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=12948&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547641127153], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:18:47,637 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.1.200:20882 from NettyClient 192.168.1.200 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x214bcbe3, /192.168.1.200:51131 => /192.168.1.200:20882]], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:18:47,638 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient NKP1JT5GYED5IC3/192.168.1.200 connect to the server /192.168.1.200:20882, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:18:47,704 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.mall.search.service.SearchItemService from url zookeeper://192.168.1.111:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=mall-search-web&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=12948&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547641127153, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:18:47,931 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[INFO ] 2019-01-16 20:18:47,999 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.mall.search.controller.SearchController.getItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2019-01-16 20:18:48,470 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 20:18:46 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 20:18:48,565 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 20:18:46 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 20:18:48,772 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'dispatcherServlet': initialization completed in 2666 ms
+
+
+[INFO ] 2019-01-16 20:19:51,357 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'dispatcherServlet': initialization started
+
+
+[INFO ] 2019-01-16 20:19:51,379 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 20:19:51 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 20:19:51,420 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-01-16 20:19:51,749 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-01-16 20:19:51,915 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2019-01-16 20:19:51,923 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-01-16 20:19:52,318 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, data: {com.mall.portal.service.ContentService=empty://192.168.1.200/com.mall.portal.service.ContentService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640289830 empty://192.168.1.200/com.mall.portal.service.ContentService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640289830 dubbo://192.168.1.200:20881/com.mall.portal.service.ContentService?anyhost=true&application=mall-portal&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=1312&side=provider&timeout=100000000&timestamp=1547639925473, com.mall.portal.service.ContentCategoryService=empty://192.168.1.200/com.mall.portal.service.ContentCategoryService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640289112 empty://192.168.1.200/com.mall.portal.service.ContentCategoryService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640289112 dubbo://192.168.1.200:20881/com.mall.portal.service.ContentCategoryService?anyhost=true&application=mall-portal&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=1312&side=provider&timeout=100000000&timestamp=1547639924135, com.mall.search.service.SearchService=empty://192.168.1.200/com.mall.search.service.SearchService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640290083 empty://192.168.1.200/com.mall.search.service.SearchService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640290083 dubbo://192.168.1.200:20882/com.mall.search.service.SearchService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=4344&side=provider&timeout=100000000&timestamp=1547640873281, com.mall.service.ItemService=empty://192.168.1.200/com.mall.service.ItemService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640289942 empty://192.168.1.200/com.mall.service.ItemService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640289942 dubbo://192.168.1.200:20880/com.mall.service.ItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save&pid=12584&side=provider&timeout=100000000&timestamp=1547641010593, com.mall.search.service.SearchItemService=empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=12948&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547641127153 empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=12948&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547641127153 dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=4344&side=provider&timeout=100000000&timestamp=1547640874308, com.mall.service.ItemCatService=empty://192.168.1.200/com.mall.service.ItemCatService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640290020 empty://192.168.1.200/com.mall.service.ItemCatService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=13164&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547640290020 dubbo://192.168.1.200:20880/com.mall.service.ItemCatService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=12584&side=provider&timeout=100000000&timestamp=1547641011137}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-01-16 20:19:52,341 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-01-16 20:19:52,358 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-01-16 20:19:52,363 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=NKP1JT5GYED5IC3
+
+
+[INFO ] 2019-01-16 20:19:52,363 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_191
+
+
+[INFO ] 2019-01-16 20:19:52,363 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-01-16 20:19:52,364 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=H:\dev\java\jre
+
+
+[INFO ] 2019-01-16 20:19:52,364 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;H:\dev\idea\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar
+
+
+[INFO ] 2019-01-16 20:19:52,364 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=H:\dev\java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;H:\dev\java\bin;H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\软件安装\Bandizip\;.
+
+
+[INFO ] 2019-01-16 20:19:52,365 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2019-01-16 20:19:52,365 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-01-16 20:19:52,366 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-01-16 20:19:52,366 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-01-16 20:19:52,366 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-01-16 20:19:52,367 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2019-01-16 20:19:52,367 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2019-01-16 20:19:52,368 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=F:\dev\workspace\idea\mall\mall-parent\mall-search-web
+
+
+[INFO ] 2019-01-16 20:19:52,369 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.1.111:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@4f1988f2
+
+
+[INFO ] 2019-01-16 20:19:52,405 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-01-16 20:19:52,408 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+
+
+[INFO ] 2019-01-16 20:19:52,418 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.1.111/192.168.1.111:2181, sessionid = 0x1683fbdc7c7005b, negotiated timeout = 30000
+
+
+[INFO ] 2019-01-16 20:19:52,420 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-01-16 20:19:52,456 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11676&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547641192230, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:19:52,492 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11676&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547641192230, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:19:52,548 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11676&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547641192230, urls: [dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=4344&side=provider&timeout=100000000&timestamp=1547640874308, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11676&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547641192230, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11676&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547641192230], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:19:52,812 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.1.200:20882 from NettyClient 192.168.1.200 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x961160cf, /192.168.1.200:51173 => /192.168.1.200:20882]], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:19:52,814 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient NKP1JT5GYED5IC3/192.168.1.200 connect to the server /192.168.1.200:20882, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:19:52,892 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.mall.search.service.SearchItemService from url zookeeper://192.168.1.111:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=mall-search-web&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11676&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547641192230, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-16 20:19:53,068 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[INFO ] 2019-01-16 20:19:53,139 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.mall.search.controller.SearchController.getItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2019-01-16 20:19:53,552 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 20:19:51 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 20:19:53,612 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Wed Jan 16 20:19:51 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-16 20:19:53,710 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'dispatcherServlet': initialization completed in 2349 ms
+
+
+[INFO ] 2019-01-16 20:21:28,958 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.1.200:20882,url:dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11676&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547641192230, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[WARN ] 2019-01-16 20:21:31,839 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.1.200:20882 find error . url: dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11676&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547641192230, dubbo version: 2.5.3, current host: 192.168.1.200
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=11676&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547641192230) failed to connect to server /192.168.1.200:20882, error message is:Connection refused: no further information: /192.168.1.200:20882
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.1.200:20882
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2019-01-17 10:26:27,727 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'dispatcherServlet': initialization started
+
+
+[INFO ] 2019-01-17 10:26:27,806 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 10:26:27 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-17 10:26:27,841 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-01-17 10:26:28,238 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-01-17 10:26:28,361 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2019-01-17 10:26:28,366 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-01-17 10:26:28,714 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, data: {com.mall.portal.service.ContentService=empty://192.168.1.200/com.mall.portal.service.ContentService?application=mall-portal-web&category=configurators&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=8652&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547691960714 empty://192.168.1.200/com.mall.portal.service.ContentService?application=mall-portal-web&category=routers&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=8652&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547691960714 dubbo://192.168.1.200:20881/com.mall.portal.service.ContentService?anyhost=true&application=mall-portal&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=8844&side=provider&timeout=100000000&timestamp=1547691733585, com.mall.portal.service.ContentCategoryService=empty://192.168.1.200:20881/com.mall.portal.service.ContentCategoryService?anyhost=true&application=mall-portal&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=8844&side=provider&timeout=100000000&timestamp=1547691732190, com.mall.search.service.SearchService=empty://192.168.1.200:20882/com.mall.search.service.SearchService?anyhost=true&application=mall-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=8624&side=provider&timeout=100000000&timestamp=1547691755408, com.mall.service.ItemService=empty://192.168.1.200/com.mall.service.ItemService?application=mall-search-web&category=configurators&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save,getItemDescById&pid=4480&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547691935627 empty://192.168.1.200/com.mall.service.ItemService?application=mall-search-web&category=routers&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save,getItemDescById&pid=4480&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547691935627 dubbo://192.168.1.200:20880/com.mall.service.ItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save,getItemDescById&pid=7280&side=provider&timeout=100000000&timestamp=1547691708327, com.mall.search.service.SearchItemService=empty://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=8624&side=provider&timeout=100000000&timestamp=1547691755871, com.mall.service.ItemCatService=empty://192.168.1.200:20880/com.mall.service.ItemCatService?anyhost=true&application=mall-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=7280&side=provider&timeout=100000000&timestamp=1547691732138}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-01-17 10:26:28,749 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-01-17 10:26:28,758 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-01-17 10:26:28,763 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=NKP1JT5GYED5IC3
+
+
+[INFO ] 2019-01-17 10:26:28,763 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_191
+
+
+[INFO ] 2019-01-17 10:26:28,764 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-01-17 10:26:28,764 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=H:\dev\java\jre
+
+
+[INFO ] 2019-01-17 10:26:28,764 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;H:\dev\idea\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar
+
+
+[INFO ] 2019-01-17 10:26:28,765 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=H:\dev\java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;H:\dev\java\bin;H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\软件安装\Bandizip\;.
+
+
+[INFO ] 2019-01-17 10:26:28,765 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2019-01-17 10:26:28,766 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-01-17 10:26:28,767 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-01-17 10:26:28,767 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-01-17 10:26:28,768 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-01-17 10:26:28,769 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2019-01-17 10:26:28,769 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2019-01-17 10:26:28,769 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=F:\dev\workspace\idea\mall\mall-parent\mall-search-web
+
+
+[INFO ] 2019-01-17 10:26:28,771 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.1.111:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@7d91e4a0
+
+
+[INFO ] 2019-01-17 10:26:28,812 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-01-17 10:26:28,815 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+
+
+[INFO ] 2019-01-17 10:26:28,823 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.1.111/192.168.1.111:2181, sessionid = 0x1683fbdc7c70062, negotiated timeout = 30000
+
+
+[INFO ] 2019-01-17 10:26:28,825 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-01-17 10:26:28,855 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5756&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547691988636, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-17 10:26:28,877 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5756&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547691988636, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-17 10:26:28,904 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5756&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547691988636, urls: [dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=8624&side=provider&timeout=100000000&timestamp=1547691755871, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5756&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547691988636, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5756&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547691988636], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-17 10:26:29,177 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.1.200:20882 from NettyClient 192.168.1.200 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x997b1184, /192.168.1.200:51138 => /192.168.1.200:20882]], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-17 10:26:29,180 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient NKP1JT5GYED5IC3/192.168.1.200 connect to the server /192.168.1.200:20882, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-17 10:26:29,266 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.mall.search.service.SearchItemService from url zookeeper://192.168.1.111:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=mall-search-web&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5756&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547691988636, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-17 10:26:29,430 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[INFO ] 2019-01-17 10:26:29,488 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.mall.search.controller.SearchController.getItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2019-01-17 10:26:29,809 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 10:26:27 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-17 10:26:29,883 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 10:26:27 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-17 10:26:29,958 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'dispatcherServlet': initialization completed in 2171 ms
+
+
+[INFO ] 2019-01-17 20:08:14,076 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.1.200:20882,url:dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5756&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547691988636, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[WARN ] 2019-01-17 20:08:15,694 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.1.200:20882 find error . url: dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5756&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547691988636, dubbo version: 2.5.3, current host: 192.168.1.200
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5756&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1547691988636) failed to connect to server /192.168.1.200:20882, error message is:Connection refused: no further information: /192.168.1.200:20882
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.1.200:20882
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2019-01-21 10:17:28,456 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'dispatcherServlet': initialization started
+
+
+[INFO ] 2019-01-21 10:17:28,514 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Jan 21 10:17:28 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-21 10:17:28,592 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-01-21 10:17:29,475 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-01-21 10:17:29,910 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2019-01-21 10:17:29,921 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-01-21 10:17:31,023 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.1.111.cache, data: {com.mall.sso.service.TokenService=empty://192.168.1.200:20883/com.mall.sso.service.TokenService?anyhost=true&application=mall-sso&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.sso.service.TokenService&methods=getUserForToken&pid=8444&side=provider&timeout=100000000&timestamp=1547885760166, com.mall.search.service.SearchService=empty://192.168.1.200/com.mall.search.service.SearchService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=8452&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547692184478 empty://192.168.1.200/com.mall.search.service.SearchService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=8452&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547692184478 dubbo://192.168.1.200:20882/com.mall.search.service.SearchService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchService&methods=importIndex&pid=8624&side=provider&timeout=100000000&timestamp=1547691755408, com.mall.portal.service.ContentService=empty://192.168.1.200/com.mall.portal.service.ContentService?application=mall-portal-web&category=configurators&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=7064&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548036617106 empty://192.168.1.200/com.mall.portal.service.ContentService?application=mall-portal-web&category=routers&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=7064&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548036617106 dubbo://192.168.1.200:20881/com.mall.portal.service.ContentService?anyhost=true&application=mall-portal&dubbo=2.5.3&interface=com.mall.portal.service.ContentService&methods=save,getListByCategoryId&pid=9516&side=provider&timeout=100000000&timestamp=1548036379599, com.mall.search.service.SearchItemService=empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5756&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547691988636 empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5756&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547691988636 dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=8624&side=provider&timeout=100000000&timestamp=1547691755871, com.mall.service.ItemCatService=empty://192.168.1.200:20880/com.mall.service.ItemCatService?anyhost=true&application=mall-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.service.ItemCatService&methods=getItemCat&pid=9848&side=provider&timeout=100000000&timestamp=1548036381020, com.mall.portal.service.ContentCategoryService=empty://192.168.1.200/com.mall.portal.service.ContentCategoryService?application=mall-manager-web&category=configurators&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=8452&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547692183791 empty://192.168.1.200/com.mall.portal.service.ContentCategoryService?application=mall-manager-web&category=routers&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=8452&revision=1.0-SNAPSHOT&side=consumer&timestamp=1547692183791 dubbo://192.168.1.200:20881/com.mall.portal.service.ContentCategoryService?anyhost=true&application=mall-portal&dubbo=2.5.3&interface=com.mall.portal.service.ContentCategoryService&methods=getCatList&pid=8844&side=provider&timeout=100000000&timestamp=1547691732190, com.mall.sso.service.RegisterService=empty://192.168.1.200:20883/com.mall.sso.service.RegisterService?anyhost=true&application=mall-sso&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.sso.service.RegisterService&methods=check,register&pid=8444&side=provider&timeout=100000000&timestamp=1547885759537, com.mall.service.ItemService=empty://192.168.1.200:20880/com.mall.service.ItemService?anyhost=true&application=mall-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.service.ItemService&methods=getById,getList,save,getItemDescById&pid=9848&side=provider&timeout=100000000&timestamp=1548036357965, com.mall.sso.service.LoginService=empty://192.168.1.200:20883/com.mall.sso.service.LoginService?anyhost=true&application=mall-sso&category=configurators&check=false&dubbo=2.5.3&interface=com.mall.sso.service.LoginService&methods=login&pid=8444&side=provider&timeout=100000000&timestamp=1547885760116}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-01-21 10:17:31,086 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-01-21 10:17:31,087 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=NKP1JT5GYED5IC3
+
+
+[INFO ] 2019-01-21 10:17:31,087 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_191
+
+
+[INFO ] 2019-01-21 10:17:31,087 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-01-21 10:17:31,088 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=H:\dev\java\jre
+
+
+[INFO ] 2019-01-21 10:17:31,088 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;H:\dev\idea\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar
+
+
+[INFO ] 2019-01-21 10:17:31,088 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=H:\dev\java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;H:\dev\java\bin;H:\dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\软件安装\Bandizip\;.
+
+
+[INFO ] 2019-01-21 10:17:31,089 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2019-01-21 10:17:31,089 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-01-21 10:17:31,091 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-01-21 10:17:31,093 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-01-21 10:17:31,093 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-01-21 10:17:31,094 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Administrator
+
+
+[INFO ] 2019-01-21 10:17:31,094 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2019-01-21 10:17:31,095 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=F:\dev\workspace\idea\mall\mall-parent\mall-search-web
+
+
+[INFO ] 2019-01-21 10:17:31,103 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.1.111:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@2f2d50cf
+
+
+[INFO ] 2019-01-21 10:17:31,162 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-01-21 10:17:31,238 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-01-21 10:17:31,244 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+
+
+[INFO ] 2019-01-21 10:17:31,255 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.1.111/192.168.1.111:2181, sessionid = 0x1683fbdc7c7008c, negotiated timeout = 30000
+
+
+[INFO ] 2019-01-21 10:17:31,259 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-01-21 10:17:31,368 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 10:17:31,415 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 10:17:31,503 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883, urls: [dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5464&side=provider&timeout=100000000&timestamp=1548036379357, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 10:17:32,203 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.1.200:20882 from NettyClient 192.168.1.200 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x7f7240f8, /192.168.1.200:52096 => /192.168.1.200:20882]], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 10:17:32,204 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient NKP1JT5GYED5IC3/192.168.1.200 connect to the server /192.168.1.200:20882, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 10:17:32,621 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.mall.search.service.SearchItemService from url zookeeper://192.168.1.111:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=mall-search-web&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1548037050883, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 10:17:33,156 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[INFO ] 2019-01-21 10:17:33,293 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.mall.search.controller.SearchController.getItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2019-01-21 10:17:34,589 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Jan 21 10:17:28 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-21 10:17:34,703 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Jan 21 10:17:28 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-01-21 10:17:34,893 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'dispatcherServlet': initialization completed in 6407 ms
+
+
+[WARN ] 2019-01-21 14:56:16,351 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 10944624ms for sessionid 0x1683fbdc7c7008c
+
+
+[INFO ] 2019-01-21 14:56:16,355 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 10944624ms for sessionid 0x1683fbdc7c7008c, closing socket connection and attempting reconnect
+
+
+[INFO ] 2019-01-21 14:56:16,457 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Disconnected)
+
+
+[INFO ] 2019-01-21 14:56:18,202 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-01-21 14:56:18,205 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+
+
+[INFO ] 2019-01-21 14:56:18,221 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.1.111/192.168.1.111:2181, sessionid = 0x1683fbdc7c7008c, negotiated timeout = 30000
+
+
+[INFO ] 2019-01-21 14:56:18,221 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-01-21 14:56:24,105 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.1.200:20882,url:dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1548037050883, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 14:56:25,954 method:com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:101)
+ [DUBBO] Close old netty channel [id: 0x7f7240f8, /192.168.1.200:52096 :> /192.168.1.200:20882] on create new netty channel [id: 0xc461f04d, /192.168.1.200:53906 => /192.168.1.200:20882], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 14:56:25,954 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.1.200:20882 from NettyClient 192.168.1.200 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xc461f04d, /192.168.1.200:53906 => /192.168.1.200:20882]], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[WARN ] 2019-01-21 16:44:43,167 method:com.alibaba.dubbo.remoting.exchange.support.header.HeartBeatTask.run(HeartBeatTask.java:71)
+ [DUBBO] Close channel HeaderExchangeClient [channel=com.alibaba.dubbo.remoting.transport.netty.NettyClient [/192.168.1.200:53906 -> /192.168.1.200:20882]], because heartbeat read idle time out: 180000ms, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 16:44:43,176 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0xc461f04d, /192.168.1.200:53906 => /192.168.1.200:20882], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 16:44:43,262 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.1.200:20882,url:dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timeout=100000000&timestamp=1548037050883, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 16:44:43,283 method:com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:101)
+ [DUBBO] Close old netty channel [id: 0xc461f04d, /192.168.1.200:53906 :> /192.168.1.200:20882] on create new netty channel [id: 0x1a92d823, /192.168.1.200:59029 => /192.168.1.200:20882], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 16:44:43,284 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.1.200:20882 from NettyClient 192.168.1.200 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x1a92d823, /192.168.1.200:59029 => /192.168.1.200:20882]], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[WARN ] 2019-01-21 16:44:43,971 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 1335575ms for sessionid 0x1683fbdc7c7008c
+
+
+[INFO ] 2019-01-21 16:44:43,972 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 1335575ms for sessionid 0x1683fbdc7c7008c, closing socket connection and attempting reconnect
+
+
+[INFO ] 2019-01-21 16:44:44,073 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Disconnected)
+
+
+[INFO ] 2019-01-21 16:44:45,374 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-01-21 16:45:06,410 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x1683fbdc7c7008c for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-01-21 16:45:07,578 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-01-21 16:45:07,579 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+
+
+[WARN ] 2019-01-21 16:45:07,580 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1285)
+Unable to reconnect to ZooKeeper service, session 0x1683fbdc7c7008c has expired
+
+
+[INFO ] 2019-01-21 16:45:07,580 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Expired)
+
+
+[INFO ] 2019-01-21 16:45:07,581 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.1.111:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@2f2d50cf
+
+
+[INFO ] 2019-01-21 16:45:07,581 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1154)
+Unable to reconnect to ZooKeeper service, session 0x1683fbdc7c7008c has expired, closing socket connection
+
+
+[INFO ] 2019-01-21 16:45:07,586 method:com.alibaba.dubbo.registry.support.FailbackRegistry.recover(FailbackRegistry.java:282)
+ [DUBBO] Recover register url [consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 16:45:07,588 method:com.alibaba.dubbo.registry.support.FailbackRegistry.recover(FailbackRegistry.java:292)
+ [DUBBO] Recover subscribe url [consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 16:45:07,587 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-01-21 16:45:07,591 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.1.111/192.168.1.111:2181, initiating session
+
+
+[INFO ] 2019-01-21 16:45:07,592 method:org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:519)
+EventThread shut down for session: 0x1683fbdc7c7008c
+
+
+[INFO ] 2019-01-21 16:45:07,594 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.1.111/192.168.1.111:2181, sessionid = 0x1683fbdc7c7009c, negotiated timeout = 30000
+
+
+[INFO ] 2019-01-21 16:45:07,595 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-01-21 16:45:07,607 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883, urls: [empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 16:45:07,796 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883, urls: [dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5464&side=provider&timeout=100000000&timestamp=1548036379357], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 16:45:07,803 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883, urls: [empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 16:45:11,424 method:com.alibaba.dubbo.registry.support.FailbackRegistry.retry(FailbackRegistry.java:309)
+ [DUBBO] Retry register [consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 16:45:11,432 method:com.alibaba.dubbo.registry.support.FailbackRegistry.retry(FailbackRegistry.java:354)
+ [DUBBO] Retry subscribe {consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883=[com.alibaba.dubbo.registry.integration.RegistryDirectory@3361ef92]}, dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[INFO ] 2019-01-21 16:45:11,452 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883, urls: [dubbo://192.168.1.200:20882/com.mall.search.service.SearchItemService?anyhost=true&application=mall-manager&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=5464&side=provider&timeout=100000000&timestamp=1548036379357, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=configurators&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883, empty://192.168.1.200/com.mall.search.service.SearchItemService?application=mall-search-web&category=routers&dubbo=2.5.3&interface=com.mall.search.service.SearchItemService&methods=getItemList&pid=10668&revision=1.0-SNAPSHOT&side=consumer&timestamp=1548037050883], dubbo version: 2.5.3, current host: 192.168.1.200
+
+
+[WARN ] 2019-01-21 19:14:41,712 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x1683fbdc7c7009c
+
+
+[INFO ] 2019-01-21 19:14:41,743 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x1683fbdc7c7009c, closing socket connection and attempting reconnect
+
+
+[INFO ] 2019-01-21 19:14:41,851 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Disconnected)
+
+
+[INFO ] 2019-01-21 19:14:43,081 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-01-21 19:15:04,089 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x1683fbdc7c7009c for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-01-21 19:15:05,354 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-01-21 19:15:26,358 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x1683fbdc7c7009c for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-01-21 19:15:27,997 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-01-21 19:15:48,999 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x1683fbdc7c7009c for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-01-21 19:15:50,874 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-01-21 19:16:11,877 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x1683fbdc7c7009c for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-01-21 19:16:13,644 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.1.111/192.168.1.111:2181. Will not attempt to authenticate using SASL (unknown error)

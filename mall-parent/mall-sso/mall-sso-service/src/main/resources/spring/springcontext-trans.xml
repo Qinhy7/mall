@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="txManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!-- 控制数据源 -->
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <!-- 还有一种基于注解形式的事务 -->
+    <!-- xml配置形式的事务(一些重要的配置) -->
+    <aop:config>
+        <!-- 切入点表达式，写法，第一个* 表示任意返回值，两个.表示包含的子包，需要修改包名 第二个 *表示任意的方法，第二个两个.表示任意参数个数 -->
+        <aop:pointcut
+                expression="execution(* com.mall.sso.service..*(..))" id="txPoint" />
+        <!-- 事务增强 -->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint" />
+    </aop:config>
+
+    <!-- 配置事务增强,事务如何切入 -->
+    <tx:advice id="txAdvice" transaction-manager="txManager">
+        <tx:attributes>
+            <!-- 所有方法都是事物方法 -->
+            <tx:method name="*" />
+            <!-- 以get开始的所有方法 -->
+            <tx:method name="get*" read-only="true" />
+            <!-- 以find开始的所有方法 -->
+            <tx:method name="find*" read-only="true" />
+            <!-- 以select开始的所有方法 -->
+            <tx:method name="select*" read-only="true" />
+        </tx:attributes>
+    </tx:advice>
+
+</beans>

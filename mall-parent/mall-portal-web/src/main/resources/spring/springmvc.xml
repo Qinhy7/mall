@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <context:component-scan base-package="com.mall.portal.controller"/>
+
+    <context:property-placeholder
+            location="classpath:conf/resource.properties" />
+
+    <!-- 配置视图解析器 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+
+    <!-- 两个标准配置 -->
+    <!-- 将springmvc不能处理的请求交给tomcat -->
+    <mvc:default-servlet-handler/>
+    <!-- springmvc执行更高级的功能，快捷的ajax请求，映射，注册mvc的bean... -->
+    <mvc:annotation-driven/>
+
+
+    <!-- 引用dubbo服务 -->
+    <dubbo:application name="mall-portal-web"/>
+    <dubbo:registry protocol="zookeeper"
+                    address="192.168.1.111:2181"/>
+    <dubbo:reference interface="com.mall.portal.service.ContentService"
+                     id="contentServiceImpl" />
+
+</beans>
