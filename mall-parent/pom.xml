@@ -83,7 +83,7 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
-                <version>${jackson.version}</version>
+                <version>[2.9.10.5,)</version>
             </dependency>
             <!-- httpclient -->
             <dependency>
@@ -95,13 +95,13 @@
             <dependency>
                 <groupId>org.quartz-scheduler</groupId>
                 <artifactId>quartz</artifactId>
-                <version>${quartz.version}</version>
+                <version>[2.3.2,)</version>
             </dependency>
             <!-- 单元测试 -->
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>${junit.version}</version>
+                <version>[4.13.1,)</version>
                 <scope>test</scope>
             </dependency>
             <!-- 日志处理 -->
@@ -135,7 +135,7 @@
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>${mysql.version}</version>
+                <version>[8.0.16,)</version>
             </dependency>
             <!-- 连接池 -->
             <dependency>
